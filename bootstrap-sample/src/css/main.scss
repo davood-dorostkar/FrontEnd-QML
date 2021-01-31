@@ -1,0 +1,92 @@
+// body{
+//   color: #fff;
+// }
+
+// $green: #00ffc4;
+// $brand-primary: $green;
+// $bg-primary: $green;
+// $link-color: $green;
+$body-bg: #1a1b1d;
+$font-family-sans-serif: "Raleway", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+// $theme-colors:(
+//   "primary": #d95700
+// );
+
+// $spacer: 1rem;
+// $spacers: ();
+// $spacers: map-merge(
+//   (
+//     0: 0,
+//     1: ($spacer * .25),
+//     2: ($spacer * .5),
+//     3: $spacer,
+//     4: ($spacer * 1.5),
+//     5: ($spacer * 3),
+//     6: ($spacer * 9)
+//   ),
+//   $spacers
+// );
+
+// #hero {
+//   background: url('/src/assets/bg.jpg') no-repeat;
+//   background-size: cover;
+//   background-position: 0 60%;
+// }
+
+.navbar {
+  width: 100%;
+  background: none !important;
+  @media (max-width: 34em) {
+    background: black !important;
+  }
+   .navbar-toggler{
+      cursor: pointer;
+      outline: 0;
+  }
+   .nav-link{
+   text-transform: uppercase;
+   font-weight: normal;
+ } 
+   .nav-item{
+   padding: 0 1rem;
+   @media(max-width:34em) {
+     padding: 0;
+   }
+ }
+   .nav-link{
+   @media(max-width: 34em){
+     font-weight: normal;
+     color:white !important;
+   }
+ }
+}
+
+.feature-wrapper{
+  color: #000;
+}
+
+.join-container{
+  background: url('src/assets/bg-btm.jpg') no-repeat;
+  background-size: cover;
+  h2 {
+    letter-spacing: 4px;
+    color: white;
+    font-weight: bold;
+  }
+  h4{
+    color: gray;
+  }
+  .form-control{
+    color: #111111;
+    border: 3px solid #2f2f2f;
+    padding: 10px;
+  }
+  .btn{
+    padding: 12px;
+    border: none;
+    color: black;
+    cursor: pointer;
+  }
+}
+@import "../../node_modules/bootstrap/scss/bootstrap";

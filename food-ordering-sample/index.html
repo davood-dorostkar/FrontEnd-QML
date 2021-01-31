@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="overlay" id="overlay">
+        <h3>
+            Searching Now ...
+        </h3>
+    </div>
+    <div class="hero-bg">
+        <section class="top">
+            <header>
+                <a href="#">yummy.eats</a>
+                <h1><span>The Healthy </span>Eating Experience</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, est! Recusandae molestias omnis
+                    nostrum aspernatur, suscipit saepe error perspiciatis asperiores?</p>
+                <div class="form-container">
+                    <form action="">
+                        <div class="left-form">
+                            <label for="city">Enter your city:</label>
+                            <input type="text" name="city" id="city">
+                            <p>Example: Tehran</p>
+                        </div>
+                        <input type="button" value="Find Your Food" id="cta-btn">
+                    </form>
+                </div>
+            </header>
+        </section>
+    </div>
+    <section class="authentic">
+        <div class="right-col">
+            <h2>Authentic. Energy.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis cumque vitae dolores harumcorrupti
+                reiciendis velit reprehenderit exercitationem, perspiciatis maiores culpa, aspernatur neque! Omnis,
+                saepe optio? Quidem odio eligendi temporibus , officiis fugit, accusamus, velit totam quis adipisci
+                corporis?</p>
+        </div>
+        <img src="/assets/chopsticks.jpg" alt="chopsticks">
+    </section>
+
+    <script>
+        let btn = document.getElementById('cta-btn');
+        let overlay = document.getElementById('overlay');
+        btn.addEventListener('click', () => {
+            overlay.style.display = 'grid';
+            overlay.classList.add('animate-overlay');
+            setTimeout(function () { overlay.classList.remove('animate-overlay') }, 3000);
+        })
+    </script>
+</body>
+
+</html>
