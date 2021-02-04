@@ -1,0 +1,33 @@
+body {
+    font-family: "Scope One", serif;
+    background-image: url("../assets/Canvas.png");
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: cover;
+    margin: 0;
+}
+
+.window {
+    padding: 0em 2em;
+    background-color: white;
+    margin: 15em 5em;
+    border-radius: 2em;
+}
+
+.sidebar {
+    position: relative;
+    padding: 2em 3em;
+    float: left;
+}
+
+.sidebar h2 {
+    font-size: 2em;
+}
+
+.man-picture {
+    display: flex;
+}
+
+.content {
+    display: flex;
+}
