@@ -8,16 +8,22 @@ body {
 }
 
 .window {
-    padding: 0em 2em;
     background-color: white;
     margin: 15em 5em;
     border-radius: 2em;
+    position: relative;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(3,auto);
+    grid-template-areas: 
+    "sidebar picture content";
 }
 
 .sidebar {
-    position: relative;
-    padding: 2em 3em;
-    float: left;
+    grid-area: sidebar;
+    justify-self: center;
+    position: absolute;
+    width: 25%;
 }
 
 .sidebar h2 {
@@ -25,9 +31,20 @@ body {
 }
 
 .man-picture {
-    display: flex;
+grid-area: picture;
+place-self: center;
+
 }
 
 .content {
-    display: flex;
+grid-area: content;
+justify-self: center;
+position: absolute;
+width: 25%;
+}
+
+
+ul li {
+    list-style-type: none;
+    font-size: 1.3em;
 }
